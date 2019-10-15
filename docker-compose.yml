@@ -12,6 +12,7 @@ services:
       - "80:80/tcp"
       - "443:443/tcp"
     environment:
+      ServerIP: ${SERVER_IP}
       TZ: ${TIME_ZONE}
       # WEBPASSWORD: ${WEB_PASSWORD} 'set a secure password here or it will be random'
     # Volumes store your data between container upgrades
