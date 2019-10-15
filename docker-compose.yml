@@ -16,7 +16,7 @@ services:
       ServerIP: ${SERVER_IP}
       TZ: ${TIME_ZONE}
       # set a secure password here or it will be random
-      WEBPASSWORD: ${WEB_PASSWORD}
+      WEBPASSWORD: "${WEB_PASSWORD}"
     # Volumes store your data between container upgrades
     volumes:
        - "${DOCKER_CONFIGS}/etc/pihole/:/etc/pihole/"
